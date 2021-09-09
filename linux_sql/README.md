@@ -62,17 +62,17 @@ There are five scripts used in this project which are as follows:
 ## Database Modeling
 The host_agent database contains two tables:
 -host_info contains the hardware specifications of each node in the cluster.
-*Field*     |  *Description*
---------------- |----------------
-id |Primary Key, Auto-incremented unique identifier for the host
-hostname|Unique name of the computer
-cpu_number|Number of CPUs in the computer
-cpu_architecture|Architecture of the computer
-cpu_model|Model of the computer
-cpu_mhz|The clock speed of the CPU, in MHz
-L2_cache|The size of the L2 cache in kB
-total_mem|The total memory in the node in kB
-timestamp|The time when the hardware specifications were taken
+|*Field*     |  *Description*|
+|--------------- |----------------|
+|id |Primary Key, Auto-incremented unique identifier for the host|
+|hostname|Unique name of the computer|
+|cpu_number|Number of CPUs in the computer|
+|cpu_architecture|Architecture of the computer|
+|cpu_model|Model of the computer|
+|cpu_mhz|The clock speed of the CPU, in MHz|
+|L2_cache|The size of the L2 cache in kB|
+|total_mem|The total memory in the node in kB|
+|timestamp|The time when the hardware specifications were taken|
 
 -host_usage which contains the usage specifications of each node in the cluster.
 *Field*     |  *Description*
@@ -92,7 +92,6 @@ Artificial data were inserted for testing purposes
 -For the bash scripts, testing was done in the terminal using a command line to ensure everything was running properly.
 -SQL queries were tested using PSQL command line and ensured the result is accurate.
 
-![my image](./assets/my_image.jpg)
 
 # Improvements
 
