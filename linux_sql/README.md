@@ -27,7 +27,7 @@ psql -h psql_host -U db_username -d host_agent -f ddl.sql
 *edit cronjobs
 crontab -e
 *add to crontab
-* * * * * bash <your path>/scripts/host_usage.sh localhost 5432 host_agent postgres password > /tmp/host_usage.log
+`````* * * * * bash <your path>/scripts/host_usage.sh localhost 5432 host_agent postgres password > /tmp/host_usage.log`````
 
 # Implemenation
 The psql_docker.sh script was implemented, and this created a PostgreSQL container which is useful.
@@ -66,12 +66,6 @@ There are five scripts used in this project which are as follows:
 ## Database Modeling
 The host_agent database contains two tables:
 -host_info contains the hardware specifications of each node in the cluster.
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
-
 | Field     |  Description |
 | ------------- | ------------- |
 |id |Primary Key, Auto-incremented unique identifier for the host |
@@ -86,6 +80,7 @@ The host_agent database contains two tables:
 
 -host_usage which contains the usage specifications of each node in the cluster.
 | Field        |   Description   |
+| ------------- | ------------- |
 |timestamp|Time when this information was recorded|
 |host_id|The ID of the corresponding host|
 |memory_free|The amount of free memory in the node in MB|
