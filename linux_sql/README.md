@@ -73,6 +73,7 @@ The host_agent database contains two tables:
 
 
 | Field     |  Description |
+| ------------- | ------------- |
 |id |Primary Key, Auto-incremented unique identifier for the host |
 |hostname|Unique name of the computer|
 |cpu_number|Number of CPUs in the computer|
