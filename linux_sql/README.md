@@ -9,24 +9,25 @@ The Monitoring agent sends the data to a database for storage and further analys
 Technologies used : Docker,Git,Linux,PostgreSQL,Bash
 
 # Quick Start
-*Start a psql instance using psql_docker.sh
+-Start a psql instance using psql_docker.sh
 
 ./scripts/psql_docker.sh create [db_username] [db_password]
 
-*Create tables using ddl.sql
+-Create tables using ddl.sql
 psql -h psql_host -U db_username -d host_agent -f ddl.sql
 
-*Insert hardware specs data into the DB using host_info.sh
+-Insert hardware specs data into the DB using host_info.sh
 /scripts/host_info.sh [psql host] [port] host_agent [db_username] [db_password]
 
-*Insert hardware usage data into the DB using host_usage.sh
+-Insert hardware usage data into the DB using host_usage.sh
 ./scripts/host_usage.sh psql_host psql_port host_agent db_username db_password
 
-*Crontab setup
+-Crontab setup
 
-*edit cronjobs
+edit cronjobs
 crontab -e
-*add to crontab
+add to crontab
+
 `````* * * * * bash <your path>/scripts/host_usage.sh localhost 5432 host_agent postgres password > /tmp/host_usage.log`````
 
 # Implemenation
