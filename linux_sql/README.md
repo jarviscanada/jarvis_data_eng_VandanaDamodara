@@ -66,6 +66,10 @@ There are five scripts used in this project which are as follows:
 ## Database Modeling
 The host_agent database contains two tables:
 -host_info contains the hardware specifications of each node in the cluster.
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 
 | Field     |  Description |
