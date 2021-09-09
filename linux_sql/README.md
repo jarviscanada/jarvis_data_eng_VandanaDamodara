@@ -46,15 +46,19 @@ Shell script description and usage
 
 There are five scripts used in this project which are as follows:
 1)psql_docker.sh : shell script that is used to create, start, or stop the PostgreSQL Docker container. A username and password must be passed if creating the container.
+
 ````bash scripts/psql_docker.sh create|start|stop [db_username] [db_password]````
 
 2)host_info.sh : Shell script that will fetch the hardware specifications of the machine and insert it into the database. The hostname, port number, database name, database username, and database password must be passed.
+
 ````bash scripts/host_info.sh localhost 5432 hostagent postgres your_password````
 
 3)host_usage.sh : Shell script that will fetch the resource usage of the machine and insert it into the database. The hostname, port number, database name, database username, and database password must be passed.
+
 ````bash scripts/host_usage.sh localhost 5432 hostagent postgres your_password````
 
 4)ddl.sql: Create a SQL table that will be used to store information of host information and host usage.
+
 ````psql -h localhost -U postgres -W ddl.sql````
 
 5)crontab: A special file that is used to periodically run a script over and over again.
@@ -63,13 +67,9 @@ There are five scripts used in this project which are as follows:
 The host_agent database contains two tables:
 -host_info contains the hardware specifications of each node in the cluster.
 
-| Field         | DescPrimary Key, Auto-incremented unique identifier for the hostription |
-| ------------- | ------------- |
-| id | Primary Key, Auto-incremented unique identifier for the host  |
-| hostname  |Unique name of the computer  |
-|*Field*     |  *Description*|
-|--------------- |----------------|
-|id ||
+
+| Field     |  Description |
+|id |Primary Key, Auto-incremented unique identifier for the host |
 |hostname|Unique name of the computer|
 |cpu_number|Number of CPUs in the computer|
 |cpu_architecture|Architecture of the computer|
@@ -80,15 +80,14 @@ The host_agent database contains two tables:
 |timestamp|The time when the hardware specifications were taken|
 
 -host_usage which contains the usage specifications of each node in the cluster.
-*Field*     |  *Description*
---------------- |----------------
-timestamp|Time when this information was recorded
-host_id|The ID of the corresponding host
-memory_free|The amount of free memory in the node in MB
-cpu_idle|Percentage of CPU not being used
-cpu_kernel|Percentage of CPU used by the kernel
-disk_io|Number of disk reads and writes
-disk_available|Amount of disk space available (in MB)
+| Field        |   Description   |
+|timestamp|Time when this information was recorded|
+|host_id|The ID of the corresponding host|
+|memory_free|The amount of free memory in the node in MB|
+|cpu_idle|Percentage of CPU not being used|
+|cpu_kernel|Percentage of CPU used by the kernel|
+|disk_io|Number of disk reads and writes|
+|disk_available|Amount of disk space available (in MB)|
 
 # Test
 
