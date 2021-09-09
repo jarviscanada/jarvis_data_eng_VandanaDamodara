@@ -62,9 +62,14 @@ There are five scripts used in this project which are as follows:
 ## Database Modeling
 The host_agent database contains two tables:
 -host_info contains the hardware specifications of each node in the cluster.
+
+| Field         | DescPrimary Key, Auto-incremented unique identifier for the hostription |
+| ------------- | ------------- |
+| id | Primary Key, Auto-incremented unique identifier for the host  |
+| hostname  |Unique name of the computer  |
 |*Field*     |  *Description*|
 |--------------- |----------------|
-|id |Primary Key, Auto-incremented unique identifier for the host|
+|id ||
 |hostname|Unique name of the computer|
 |cpu_number|Number of CPUs in the computer|
 |cpu_architecture|Architecture of the computer|
