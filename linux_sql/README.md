@@ -1,4 +1,4 @@
-LINUX CLUSTER MANAGEMENT SYSTEM
+# LINUX CLUSTER MANAGEMENT SYSTEM
 
 LCMA is used to monitor and collect data of various host machines connected through a network. The data that is collected includes hardware specifications, activity, and performances of machines in the cluster
 Data is stored in PostgreSQL Database which is an RDBMS database using Docker Containers.
@@ -9,25 +9,29 @@ The Monitoring agent sends the data to a database for storage and further analys
 Technologies used : Docker,Git,Linux,PostgreSQL,Bash
 
 # Quick Start
-*Start a psql instance using psql_docker.sh
+* Start a psql instance using psql_docker.sh
 
-./scripts/psql_docker.sh create [db_username] [db_password]
+`````./scripts/psql_docker.sh create [db_username] [db_password]`````
 
-*Create tables using ddl.sql
-psql -h psql_host -U db_username -d host_agent -f ddl.sql
+* Create tables using ddl.sql
 
-*Insert hardware specs data into the DB using host_info.sh
-/scripts/host_info.sh [psql host] [port] host_agent [db_username] [db_password]
+`````psql -h psql_host -U db_username -d host_agent -f ddl.sql`````
 
-*Insert hardware usage data into the DB using host_usage.sh
-./scripts/host_usage.sh psql_host psql_port host_agent db_username db_password
+* Insert hardware specs data into the DB using host_info.sh
 
-*Crontab setup
+`````/scripts/host_info.sh [psql host] [port] host_agent [db_username] [db_password]`````
 
-*edit cronjobs
+*  Insert hardware usage data into the DB using host_usage.sh
+
+`````./scripts/host_usage.sh psql_host psql_port host_agent db_username db_password`````
+
+* Crontab setup
+
+edit cronjobs
 crontab -e
-*add to crontab
-* * * * * bash <your path>/scripts/host_usage.sh localhost 5432 host_agent postgres password > /tmp/host_usage.log
+add to crontab
+
+`````* * * * * bash <your path>/scripts/host_usage.sh localhost 5432 host_agent postgres password > /tmp/host_usage.log`````
 
 # Implemenation
 The psql_docker.sh script was implemented, and this created a PostgreSQL container which is useful.
@@ -46,15 +50,19 @@ Shell script description and usage
 
 There are five scripts used in this project which are as follows:
 1)psql_docker.sh : shell script that is used to create, start, or stop the PostgreSQL Docker container. A username and password must be passed if creating the container.
+
 ````bash scripts/psql_docker.sh create|start|stop [db_username] [db_password]````
 
 2)host_info.sh : Shell script that will fetch the hardware specifications of the machine and insert it into the database. The hostname, port number, database name, database username, and database password must be passed.
+
 ````bash scripts/host_info.sh localhost 5432 hostagent postgres your_password````
 
 3)host_usage.sh : Shell script that will fetch the resource usage of the machine and insert it into the database. The hostname, port number, database name, database username, and database password must be passed.
+
 ````bash scripts/host_usage.sh localhost 5432 hostagent postgres your_password````
 
 4)ddl.sql: Create a SQL table that will be used to store information of host information and host usage.
+
 ````psql -h localhost -U postgres -W ddl.sql````
 
 5)crontab: A special file that is used to periodically run a script over and over again.
@@ -62,28 +70,28 @@ There are five scripts used in this project which are as follows:
 ## Database Modeling
 The host_agent database contains two tables:
 -host_info contains the hardware specifications of each node in the cluster.
-*Field*     |  *Description*
---------------- |----------------
-id |Primary Key, Auto-incremented unique identifier for the host
-hostname|Unique name of the computer
-cpu_number|Number of CPUs in the computer
-cpu_architecture|Architecture of the computer
-cpu_model|Model of the computer
-cpu_mhz|The clock speed of the CPU, in MHz
-L2_cache|The size of the L2 cache in kB
-total_mem|The total memory in the node in kB
-timestamp|The time when the hardware specifications were taken
+| Field     |  Description |
+| ------------- | ------------- |
+|id |Primary Key, Auto-incremented unique identifier for the host |
+|hostname|Unique name of the computer|
+|cpu_number|Number of CPUs in the computer|
+|cpu_architecture|Architecture of the computer|
+|cpu_model|Model of the computer|
+|cpu_mhz|The clock speed of the CPU, in MHz|
+|L2_cache|The size of the L2 cache in kB|
+|total_mem|The total memory in the node in kB|
+|timestamp|The time when the hardware specifications were taken|
 
 -host_usage which contains the usage specifications of each node in the cluster.
-*Field*     |  *Description*
---------------- |----------------
-timestamp|Time when this information was recorded
-host_id|The ID of the corresponding host
-memory_free|The amount of free memory in the node in MB
-cpu_idle|Percentage of CPU not being used
-cpu_kernel|Percentage of CPU used by the kernel
-disk_io|Number of disk reads and writes
-disk_available|Amount of disk space available (in MB)
+| Field        |   Description   |
+| ------------- | ------------- |
+|timestamp|Time when this information was recorded|
+|host_id|The ID of the corresponding host|
+|memory_free|The amount of free memory in the node in MB|
+|cpu_idle|Percentage of CPU not being used|
+|cpu_kernel|Percentage of CPU used by the kernel|
+|disk_io|Number of disk reads and writes|
+|disk_available|Amount of disk space available (in MB)|
 
 # Test
 
@@ -92,7 +100,6 @@ Artificial data were inserted for testing purposes
 -For the bash scripts, testing was done in the terminal using a command line to ensure everything was running properly.
 -SQL queries were tested using PSQL command line and ensured the result is accurate.
 
-![my image](./assets/my_image.jpg)
 
 # Improvements
 
