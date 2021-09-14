@@ -95,19 +95,21 @@ The host_agent database contains two tables:
 
 # Test
 
--The monitoring agent was fully set up and tested on a CentOS 7 virtual machine. Testing was performed on a single server computer
+- The monitoring agent was fully set up and tested on a CentOS 7 virtual machine. Testing was performed on a single server computer
 Artificial data were inserted for testing purposes
--For the bash scripts, testing was done in the terminal using a command line to ensure everything was running properly.
--SQL queries were tested using PSQL command line and ensured the result is accurate.
+
+- For the bash scripts, testing was done in the terminal using a command line to ensure everything was running properly.
+- 
+- SQL queries were tested using PSQL command line and ensured the result is accurate.
 
 
 # Improvements
 
 While this is a perfect monitoring agent to monitor all the activities few improvements that could be made are :
 
--More variety of hardware usage data could be collected and stored which will give better wider hardware information of node usage.
+- More variety of hardware usage data could be collected and stored which will give better wider hardware information of node usage.
 
--More Tables could be created to store wider information instead of storing all the usage information in one table.
+- More Tables could be created to store wider information instead of storing all the usage information in one table.
 
--Periodically taking Backup of Database would help to preserve Data.
+- Periodically taking Backup of Database would help to preserve Data.
 
