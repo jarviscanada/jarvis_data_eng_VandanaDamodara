@@ -1,5 +1,5 @@
 
-
+# creating table for host usage data
 CREATE TABLE PUBLIC.host_info
 (
 id               SERIAL NOT NULL PRIMARY KEY,
@@ -13,6 +13,7 @@ Total_mem          INTEGER NOT NULL,
 timestamp       TIMESTAMP NOT NULL
 );
 
+#creating table for host info data
 CREATE TABLE PUBLIC.host_usage
   (
      timestamp      TIMESTAMP NOT NULL,
