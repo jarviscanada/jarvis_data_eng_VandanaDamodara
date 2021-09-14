@@ -25,4 +25,4 @@ insert_stmnt="INSERT INTO host_usage(host_id,memory_free,cpu_idle,cpu_kernel,dis
 
 export PGPASSWORD=$psql_password
 psql -h "$psql_host" -p "$psql_port" -d "$db_name" -U "$psql_user" -c "$insert_stmnt"
-exit 0
+exit $?
