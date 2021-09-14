@@ -99,7 +99,7 @@ The host_agent database contains two tables:
 Artificial data were inserted for testing purposes
 
 - For the bash scripts, testing was done in the terminal using a command line to ensure everything was running properly.
-- 
+
 - SQL queries were tested using PSQL command line and ensured the result is accurate.
 
 
