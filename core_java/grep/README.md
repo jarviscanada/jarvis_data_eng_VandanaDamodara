@@ -13,15 +13,14 @@ Apache Maven, Git ,Docker , Java SE 8 [Lambda/Steam Functions]
 
 The application can be run by following commands:
 
-'''' $ mvn clean compile
-$ mvn package
-$ java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp {regex} {rootPath} {outFile} ''''
+```` $ mvn clean compile
+     $ mvn package
+     $ java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp {regex} {rootPath} {outFile} ```` 
 
-'''' java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp {regex} {rootPath} {outFile} ''''
+```` java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp {regex} {rootPath} {outFile} ````
 
 ## Design
-Script Descriptionsocker pull deelango/core_java/grep
-docker run --rm -v `pwd`/data:/data -v `pwd`/out:/out deelango/core_java/grep ${regex_pattern} ${src_dir} ${outfile}
+
 JavaGrepp.java; This is a public interface file with all the methods required to traverse a directory, read a file, check to see if a line contains the regex_pattern, and return it to another file.
 
 JavaGrepImp.java; This is the loop implementation of the Java Grep Application.
@@ -29,21 +28,22 @@ JavaGrepImp.java; This is the loop implementation of the Java Grep Application.
 JavaGrepLambdaImp.java; This is the Lambda/Steam implementation of the Java Grep Application.
 
 # Implemenation
+
 ## Pseudocode
 
 The process method is implemented in following way:
 
-''''for (File file: listFiles(path))
+````for (File file: listFiles(path))
 for (String line: readLines(file))
 if (containsPattern(line))
 matchedLines.add(line);
-writeToFile(matchedLines);'''''
+writeToFile(matchedLines); ````
 
 ## Performance Issue
 
 Using Java Grep requires a lot of memory in the JVM especially when parsing all text to be checked by the containsPattern function. Minimum and Maximum memory can be defined by using the -Xms and -Xmx flags to set the memory sizes.
 
-''''java -Xms5m -Xmx30m -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp .*Romeo.*Juliet.* {rootPath} {outFile}'''''
+````java -Xms5m -Xmx30m -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp .*Romeo.*Juliet.* {rootPath} {outFile}````
 
 If the memory was 5Mb and a file was processed with 5Mb then a memory error would occur because there isn't enough memory to complete the process.
 This issue can be resolved using Stream API.
@@ -52,10 +52,10 @@ This issue can be resolved using Stream API.
 
 The app was tested manually using sample text files that consisted of varying text patterns and comparing the results with the results obtained from using the Linux grep command on the same text file and pattern.
 
- ''''java -jar grep-demo.jar ${regex_pattern} ${src_dir} ${outfile}'''''
-Approach 3: Dockerized Java Grep Application
+```` java -jar grep-demo.jar ${regex_pattern} ${src_dir} ${outfile} ````
 
 # Deployment
+
 The Java Grep Application was converted into an image using docker build and uploaded to DockerHub using docker push for easier distribution to users.
 
 # Limitations and Improvements
