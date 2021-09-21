@@ -5,17 +5,16 @@ Linux uses the grep command to search for a string of characters in a given dire
 The product can be used by anyone who wishes to search through a large data file for a specific text pattern and return the output to another file.
 
 ## Technologies:
-ocker pull deelango/core_java/grep
-docker run --rm -v `pwd`/data:/data -v `pwd`/out:/out deelango/core_java/grep ${regex_pattern} ${src_dir} ${outfile}
+
 Apache Maven, Git ,Docker , Java SE 8 [Lambda/Steam Functions] 
 
 # Quick Start
 
 The application can be run by following commands:
 
-   $ mvn clean compile
+````  $ mvn clean compile
      $ mvn package
-     $ java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp {regex} {rootPath} {outFile} ```` 
+     $ java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp {regex} {rootPath} {outFile} ````  
 
 ```` java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp {regex} {rootPath} {outFile} ````
 
@@ -43,7 +42,7 @@ writeToFile(matchedLines); ```
 
 Using Java Grep requires a lot of memory in the JVM especially when parsing all text to be checked by the containsPattern function. Minimum and Maximum memory can be defined by using the -Xms and -Xmx flags to set the memory sizes.
 
-````java -Xms5m -Xmx30m -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp .*Romeo.*Juliet.* {rootPath} {outFile}````
+```` java -Xms5m -Xmx30m -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp .*Romeo.*Juliet.* {rootPath} {outFile}````
 
 If the memory was 5Mb and a file was processed with 5Mb then a memory error would occur because there isn't enough memory to complete the process.
 This issue can be resolved using Stream API.
