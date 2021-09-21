@@ -34,9 +34,9 @@ JavaGrepLambdaImp.java; This is the Lambda/Steam implementation of the Java Grep
 
 The process method is implemented in following way:
 
-``` for (File file: listFiles(path)) ```
+> for (File file: listFiles(path)) 
 
-``` for (String line: readLines(file)) ```
+>for (String line: readLines(file)) 
 
 ``` if (containsPattern(line)) ```
 
