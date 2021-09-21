@@ -12,9 +12,9 @@ Apache Maven, Git ,Docker , Java SE 8 [Lambda/Steam Functions]
 
 The application can be run by following commands:
 
-$ mvn clean compile
-$ mvn package 
-$ java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp {regex} {rootPath} {outFile}   
+ ````$ mvn clean compile ````
+```` $ mvn package  ````
+```` $ java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp {regex} {rootPath} {outFile} ````   
 
 ```` java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp {regex} {rootPath} {outFile} ````
 
@@ -32,11 +32,11 @@ JavaGrepLambdaImp.java; This is the Lambda/Steam implementation of the Java Grep
 
 The process method is implemented in following way:
 
-``` for (File file: listFiles(path))
-for (String line: readLines(file))
-if (containsPattern(line))
-matchedLines.add(line);
-writeToFile(matchedLines); ```
+``` for (File file: listFiles(path)) ```
+``` for (String line: readLines(file)) ```
+``` if (containsPattern(line)) ```
+``` matchedLines.add(line); ```
+``` writeToFile(matchedLines); ```
 
 ## Performance Issue
 
