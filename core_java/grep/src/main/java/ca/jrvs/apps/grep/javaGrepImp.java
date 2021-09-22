@@ -16,7 +16,7 @@ import org.apache.log4j.BasicConfigurator;
 
 
 
-public class javaGrepImp implements JavaGrep {
+public class JavaGrepImp implements JavaGrep {
 
   final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
   private String regex;
@@ -31,14 +31,14 @@ public class javaGrepImp implements JavaGrep {
     }
     BasicConfigurator.configure();
 
-    javaGrepImp JavaGrepImp = new javaGrepImp();
-    JavaGrepImp.setRegex(args[0]);
-    JavaGrepImp.setRootPath(args[1]);
-    JavaGrepImp.setOutFile(args[2]);
+    JavaGrepImp javaGrepImp = new JavaGrepImp();
+    javaGrepImp.setRegex(args[0]);
+    javaGrepImp.setRootPath(args[1]);
+    javaGrepImp.setOutFile(args[2]);
     try {
-      JavaGrepImp.process();
+      javaGrepImp.process();
     } catch (Exception ex) {
-     JavaGrepImp.logger.error(ex.getMessage(), ex);
+     javaGrepImp.logger.error("Process failed", ex);
     }
   }
   @Override
@@ -63,7 +63,7 @@ public class javaGrepImp implements JavaGrep {
       try {
         throw new FileNotFoundException("ERROR: root path is empty or cannot access root path.");
       } catch (FileNotFoundException e) {
-        e.printStackTrace();
+        logger.error("FileNotFoundException", e);
       }
     }
     List<File> result = new ArrayList<>();
@@ -95,7 +95,7 @@ public class javaGrepImp implements JavaGrep {
       br.close();    //closes the stream and release the resources
 
     } catch (IOException e) {
-      e.printStackTrace();
+      logger.error("IOException", e);
     }
     return lineList;
   }
@@ -138,158 +138,4 @@ public class javaGrepImp implements JavaGrep {
     this.outFile = outFile;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
