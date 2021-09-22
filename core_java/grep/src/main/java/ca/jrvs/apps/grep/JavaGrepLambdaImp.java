@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import org.apache.log4j.BasicConfigurator;
 
-public class JavaGrepLambdaImp extends javaGrepImp {
+public class JavaGrepLambdaImp extends javaGrepImp{
 
   public static void main(String[] args) {
     if (args.length != 3) {
@@ -28,7 +28,7 @@ public class JavaGrepLambdaImp extends javaGrepImp {
     try {
       javaGrepLambdaImp.process();
     } catch (Exception ex) {
-      javaGrepLambdaImp.logger.error(ex.getMessage(), ex);
+      javaGrepLambdaImp.logger.error("Process Failed", ex);
     }
   }
 
@@ -42,8 +42,7 @@ public class JavaGrepLambdaImp extends javaGrepImp {
 
       return filenames.collect(Collectors.toList());
     } catch (IOException e) {
-      logger.error("IOException", e);
-      throw new IllegalArgumentException("IOException");
+      throw new IllegalArgumentException("Input data source is wrong");
     }
   }
 
@@ -59,10 +58,13 @@ public class JavaGrepLambdaImp extends javaGrepImp {
       }
       } catch (FileNotFoundException e) {
       logger.error("FileNotFoundException", e);
-    } catch (IOException e) {
-      logger.error("IOException", e);
     }
+      catch (IOException e) {
+        logger.error("IOException", e);
+
+      }
     return list;
   }
 }
+
 
