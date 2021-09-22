@@ -1,4 +1,3 @@
-Java Grep Application
 # Introduction
 The Java Grep application is used to search plain-text data sets for lines that match a regular expression. This is similar to the functionality found in Unix-like operating systems. The application was was built with an interface and implemented with while/for loops along with an alternate implementation using Streams and Lambda expressions for efficiency. Project management was achived through Maven which also handled dependencies.
 Linux uses the grep command to search for a string of characters in a given directory. The Java Grep Application is an implementation of the Linux grep feature, the application was created using two methods: loops and Lambda/Steam API's. The project was built with Apache Maven and deployed using docker.

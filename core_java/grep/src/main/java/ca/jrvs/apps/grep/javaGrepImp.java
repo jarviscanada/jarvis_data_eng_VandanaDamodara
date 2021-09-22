@@ -38,7 +38,7 @@ public class javaGrepImp implements JavaGrep {
     try {
       JavaGrepImp.process();
     } catch (Exception ex) {
-     JavaGrepImp.logger.error(ex.getMessage(), ex);
+     JavaGrepImp.logger.error("Process Failed", ex);
     }
   }
   @Override
@@ -63,7 +63,7 @@ public class javaGrepImp implements JavaGrep {
       try {
         throw new FileNotFoundException("ERROR: root path is empty or cannot access root path.");
       } catch (FileNotFoundException e) {
-        e.printStackTrace();
+        logger.error("FileNotFoundException", e);
       }
     }
     List<File> result = new ArrayList<>();
@@ -95,7 +95,7 @@ public class javaGrepImp implements JavaGrep {
       br.close();    //closes the stream and release the resources
 
     } catch (IOException e) {
-      e.printStackTrace();
+      logger.error("InputOutput Exception", e);
     }
     return lineList;
   }
@@ -138,158 +138,3 @@ public class javaGrepImp implements JavaGrep {
     this.outFile = outFile;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
