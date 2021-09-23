@@ -38,7 +38,11 @@ public class JavaGrepImp implements JavaGrep {
     try {
       javaGrepImp.process();
     } catch (Exception ex) {
+<<<<<<< HEAD
      javaGrepImp.logger.error("Process failed", ex);
+=======
+     JavaGrepImp.logger.error("Process Failed", ex);
+>>>>>>> 55c8ddf483a24c6137fd1059818b59cf70699f9e
     }
   }
   @Override
@@ -95,7 +99,11 @@ public class JavaGrepImp implements JavaGrep {
       br.close();    //closes the stream and release the resources
 
     } catch (IOException e) {
+<<<<<<< HEAD
       logger.error("IOException", e);
+=======
+      logger.error("InputOutput Exception", e);
+>>>>>>> 55c8ddf483a24c6137fd1059818b59cf70699f9e
     }
     return lineList;
   }
@@ -138,4 +146,7 @@ public class JavaGrepImp implements JavaGrep {
     this.outFile = outFile;
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 55c8ddf483a24c6137fd1059818b59cf70699f9e
