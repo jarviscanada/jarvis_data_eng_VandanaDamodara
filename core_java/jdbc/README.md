@@ -10,7 +10,7 @@ Git | Java SE 8 | JDBC API | Apache Maven | PostgreSQL
 #Implementation
 ## ER Diagram
 
-![image.drawio](./assets/image.drawio.jpg)
+![image.drawio](./assets/image.drawio.png)
 
 
 ## Design Patterns
