@@ -10,6 +10,8 @@ Git | Java SE 8 | JDBC API | Apache Maven | PostgreSQL
 #Implementation
 ## ER Diagram
 
+![image](./assets/image.jpg)
+
 
 ## Design Patterns
 
