@@ -96,7 +96,7 @@ public class JavaGrepImp implements JavaGrep {
       br.close();    //closes the stream and release the resources
 
     } catch (IOException e) {
-      
+
       logger.error("InputOutput Exception", e);
 
     }
