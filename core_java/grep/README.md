@@ -1,5 +1,5 @@
 # Introduction
-<<<<<<< HEAD
+
 
 This Java Grep application is designed to implement the usage of grep app in Linux systems. This app allows to search for matching strings from files. There are two approaches to implement this function , First it is created using for and while loops, second one  using lambda and stream APIs.
 The project was built with Apache Maven and deployed using docker.This application can be used by anyone who wants to search for specific pattern through a directory of files and return the output  in a particular file.
