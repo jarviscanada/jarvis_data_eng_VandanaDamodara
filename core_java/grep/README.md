@@ -1,33 +1,5 @@
 # Introduction
-<<<<<<< HEAD
 
-
-This Java Grep application is designed to implement the usage of grep app in Linux systems. This app allows to search for matching strings from files. There are two approaches to implement this function , First it is created using for and while loops, second one  using lambda and stream APIs.
-The project was built with Apache Maven and deployed using docker.This application can be used by anyone who wants to search for specific pattern through a directory of files and return the output  in a particular file.
-his app has been implemented using Java interface and required library packages including java.io, java.util, and java.slf4j
-All the Exception handlings are properly handled.Java Code is written in intellij IDE with Maven as project management outline.
-
-# Quick Start
-
-This app can be used by following three ways:
-
-##Aproach 1: Using classpath and classfiles
-
-'''' java -classpath target/classes ca.jrvs.apps.grep.JavaGrepImp {regex_pattern} ./data /out/grep.txt''''
-
-''' java -classpath target/classes ca.jrvs.apps.grep.JavaGrepLambdaImp {regex_pattern} ./data /out/grep.txt''''
-
-##Aproach 2: Using jarfiles
-
-''''java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp {regex_pattern} ./data /out/grep.txt''''
-
-''''java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepLambdaImp {regex_pattern} ./data /out/grep.txt''''
-
-##Approach 3: Using Docker container
-
-''''docker run --rm -v `pwd`/data:/data -v `pwd`/log:/log ${docker_user}/grep {regex_pattern} /data /log/grep.out''''
-=======
->>>>>>> develop
 
 The Java Grep application is used to search plain-text data sets for lines that match a regular expression. This is similar to the functionality found in Unix-like operating systems. The application was was built with an interface and implemented with while/for loops along with an alternate implementation using Streams and Lambda expressions for efficiency. Project management was achived through Maven which also handled dependencies.
 Linux uses the grep command to search for a string of characters in a given directory. The Java Grep Application is an implementation of the Linux grep feature, the application was created using two methods: loops and Lambda/Steam API's. The project was built with Apache Maven and deployed using docker.
@@ -83,19 +55,19 @@ This issue can be resolved using Stream API.
 The app was tested manually using sample text files that consisted of varying text patterns and comparing the results with the results obtained from using the Linux grep command on the same text file and pattern.
 
 ```` java -jar grep-demo.jar ${regex_pattern} ${src_dir} ${outfile} ````
->>>>>>> 55c8ddf483a24c6137fd1059818b59cf70699f9e
+
 
 # Deployment
 
 The Java Grep Application was converted into an image using docker build and uploaded to DockerHub using docker push for easier distribution to users.
 
-<<<<<<< HEAD
+
 # Improvement
  
 - When there are multiple files through which we are searching the pattern Data then it would be more efficient to Add more source file information in the output file.
 
 - The size of the input file is limited by the heap size of the machine running the program. Using ,Lambda/Steam implementation will be a solution in this case as this would allow only the data that is being operated on to be held in memory.
-=======
+
 # Limitations and Improvements
 The two biggest limitations have to do with memory and lack of functionality:
 
