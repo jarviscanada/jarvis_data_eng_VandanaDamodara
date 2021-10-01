@@ -9,7 +9,7 @@ public class Stack {
    * Implementation of  a last-in-first-out (LIFO) stack using  two queues. The implemented stack  supports all the functions of a normal stack (push, top, pop, and empty).
    * https://www.notion.so/jarvisdev/Implement-Stack-using-Queue-bcc4ebe35ef24ba18a13126eadec5c9c#d827e0e409744cfcb4e34563dba2456e
    *
-   * /
+   */
 
   static Queue<Integer> q1 = new LinkedList<>();
   static Queue<Integer> q2 = new LinkedList<>();
