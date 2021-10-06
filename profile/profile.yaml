@@ -58,8 +58,7 @@ highlighted_projects:
     #URL is optional
     git_url:
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Designed a Database for Retail Customer comprising of number of Entities by Entity Relationship diagram and Implementing the same by creating number of tables having primary keys and foreign keys to recognize the relationship Which had helped to ease the Querying of database .Used IBM DB2 for the same."
-#List of professional experience
+    description: "Designed a Relational Database and created Entity Relationship Diagram for Retail Customer containing various Entities. Implemented by creating many tables having primary keys and foreign keys to recognize the relationship Which had helped to ease the CRUD operations on the database. Performed various SQL Queries on the Database.This project was developed using IBM Db2"
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
 #The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
 professional_experience:
@@ -72,8 +71,7 @@ professional_experience:
   - title: "System Engineer"
     company: "Tata Consultancy services"
     duration: "2011-2014"
-    description: "Worked on various Projects comprising of Database management systems mostly working on MySQL,IBM Db2  using SQL language I had also able to Contribute to the complete lifecycle of software development (SDLC).Developed few Data ingestion projects to Big data .Worked on Hive queries"
-
+    description: "Developed many different Databases for data engineering projects. Worked on Database design and reviewing the database design model.  Contributed toward SDLC process and  Followed the Agile/Scrum team framework for team collaboration. Worked on various Projects comprising related to Database management systems. Worked on few Data ingestion projects to Big data. Worked on Hive queries. Examples of tools that I worked with include Java, SQL, IBM DB,Oracle, MySQL Docker, Linux Bash, and many other important technologies all while crafting solutions to real-world problems"
 #List of edcuation
 education: 
   - school_name: "Veer Surendra sai university of Technology"
