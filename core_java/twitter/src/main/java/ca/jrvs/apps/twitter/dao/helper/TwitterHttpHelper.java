@@ -1,5 +1,6 @@
 package ca.jrvs.apps.twitter.dao.helper;
 
+import ch.qos.logback.classic.BasicConfigurator;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -16,6 +17,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.DefaultBHttpClientConnection;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.conn.DefaultHttpClientConnectionOperator;
 import org.apache.http.util.EntityUtils;
 import org.springframework.http.HttpMethod;
@@ -24,11 +26,20 @@ public class TwitterHttpHelper implements HttpHelper{
   private final OAuthConsumer consumer;
   private final HttpClient httpClient;
 
-  public TwitterHttpHelper(String consumerKey, String consumerSecret, String accessToken, String tokenSecret){
+ /** public TwitterHttpHelper(String consumerKey, String consumerSecret, String accessToken, String tokenSecret){
     consumer = new CommonsHttpOAuthConsumer(consumerKey, consumerSecret);
     consumer.setTokenWithSecret(accessToken, tokenSecret);
     httpClient = new DefaultHttpClient();
   }
+  **/
+ public TwitterHttpHelper(String consumerKey, String consumerSecret, String accessToken,
+     String tokenSecret) {
+   //Use default logger config
+   //BasicConfigurator.configure();
+   consumer = new CommonsHttpOAuthConsumer(consumerKey, consumerSecret);
+   consumer.setTokenWithSecret(accessToken, tokenSecret);
+   httpClient = HttpClientBuilder.create().build();
+ }
 
   public static void main(String[] args) throws URISyntaxException, OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException{
     String consumerKey = System.getenv("consumerKey");
