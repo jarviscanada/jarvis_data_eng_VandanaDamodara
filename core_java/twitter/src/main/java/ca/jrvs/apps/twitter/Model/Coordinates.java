@@ -25,4 +25,7 @@ public class Coordinates {
   public void setType(String type) {
     this.type = type;
   }
+  public Double getLatitude() { return coordinates[0];}
+  public Double getLongitude() { return coordinates[1];}
+
 }
