@@ -103,7 +103,8 @@ The Objects are modelled following this sample JSON output.
   "favorite_count":0,
   "favorited":false,
   "retweeted":false
- } ````
+ }
+ ````
 
 ### Spring
 
