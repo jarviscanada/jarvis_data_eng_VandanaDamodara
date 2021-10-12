@@ -35,7 +35,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TwitterDaoTest {
-
+/**
   private TwitterDao twitterDao;
 
   @Before
@@ -53,7 +53,7 @@ public class TwitterDaoTest {
 
   }
 
-@Test
+  @Test
   public void create() throws Exception {
     String tweeterMessage = "It's a working day";
     double lat = 43.595310;
@@ -70,8 +70,8 @@ public class TwitterDaoTest {
     Entities entity = EntityBuilder.buildEntity(hashTags, null);
     newTweet.setEntity(entity);
 
-*/
-     //test if the object is properly created
+
+    //test if the object is properly created
     System.out.println(JsonParser.toJson(newTweet, true, true));
     assertEquals(tweeterMessage, newTweet.getTweeterMessage());
     assertNotNull(newTweet.getLocation());
@@ -82,40 +82,33 @@ public class TwitterDaoTest {
     System.out.println(JsonParser.toJson(returnedTweet, true, true));
   }
 
- /** @Test
-  public void create()  throws Exception {
-    String hashTag = "#Test_Case: ";
-    String text = "It's a marvelous day";
-    Double lat = 43.595310;;
-    Double lon = -79.640579;
-    Tweet postTweet =TweetBuilder.buildTweet(text, lon, lat);
-    System.out.println("tweet"+ postTweet);
-    Tweet tweet = twitterDao.create(postTweet);
-    System.out.println(tweet);
-    System.out.println(JsonParser.toJson(tweet, true, true));
-  }
-  **/
 
- @Test
+
+**/
+ /** @Test
   public void findById() throws Exception {
 
-      // ACTUAL TWEET:  This is a sample tweet Its a beautiful day!
-      String id = "1445768587671597062";
-      Tweet returnedTweet = twitterDao.findById(id);
-      System.out.println(JsonParser.toJson(returnedTweet, true, true));
+    // ACTUAL TWEET:  This is a sample tweet Its a beautiful day!
+    String id = "1445768587671597062";
+    Tweet returnedTweet = twitterDao.findById(id);
+    System.out.println(JsonParser.toJson(returnedTweet, true, true));
 
-      assertEquals(id, returnedTweet.getIdString());
-      //System.out.println(returnedTweet.getEntity().getUserMentions()[0].getScreenName());
-      assertEquals("It's a Beautiful day", returnedTweet.getTweeterMessage());
+    assertEquals(id, returnedTweet.getIdString());
+    //System.out.println(returnedTweet.getEntity().getUserMentions()[0].getScreenName());
+    assertEquals("It's a Beautiful day", returnedTweet.getTweeterMessage());
 
   }
+}
 
   //Delete the tweet with id 1445774792141852681 message "Its a Working day"
-  @Test
+ /** @Test
   public void deleteById() {
     Tweet returnedTweet = twitterDao.deleteById("1445774792141852681");
     //System.out.println(JsonParser.toJson(returnedTweet, true, true));
 
     assertEquals("1445774792141852681", returnedTweet.getIdString());
   }
-  }
+
+
+ **/
+}

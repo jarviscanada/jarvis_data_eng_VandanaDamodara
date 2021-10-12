@@ -106,13 +106,14 @@ public class TwitterDao implements CrdDao<Tweet, String> {
         tempUriInput += AMPERSAND + "lat" + EQUAL + URLEncoder
             .encode(Double.toString(latitude), StandardCharsets.UTF_8.name());
 
+
       }
     } catch (UnsupportedEncodingException e) {
       logger.error("Encoding not supported: " + StandardCharsets.UTF_8.name(), e);
       throw new RuntimeException("Encoding not supported ", e);
     }
     return new URI(TWITTER_POST_URI + tempUriInput);
-
+    //System.out.println(URI);
   }
 
   @Override
@@ -121,6 +122,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
     URI tweeterUri;
     try {
       tweeterUri = getTweetUri(tweet);
+      System.out.println(tweeterUri);
     } catch (URISyntaxException e) {
       throw new IllegalArgumentException("Invalid tweet input", e);
     }
