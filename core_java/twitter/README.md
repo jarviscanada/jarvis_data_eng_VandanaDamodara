@@ -1,4 +1,4 @@
-#Twitter CLI Application
+# Twitter CLI Application
 
 ## Introduction
 The Twitter Command Line Interface (CLI) Application is capable of posting, showing, and deleting a post on Twitter using the command line. Libraries such as HTTP and OAuth 1.0 were used to send/receive/authenticate requests using the Twitter Rest APIs. The Jackson library was used to convert JSON objects to Tweet objects. Moreover, Apache Maven was used to handle project dependencies, testing was done using JUnit4 and Mockito, and the app was deployed using Docker.The app follows the MVC architecture and utilizes the Twitter RESTful API using the Apache HTTPComponents library to connect to Twitter.
@@ -22,6 +22,8 @@ Technologies: Git | Docker | Java SE 8 | Apache Maven | Twitter Rest API
 
 ## Design
 ### UML diagram
+
+![my image](./assets/twittercli.png)
 
 ### The Components
 TwitterCliApp
