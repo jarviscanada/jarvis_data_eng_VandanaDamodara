@@ -81,6 +81,5 @@ TwitterService twitterService;
     String[] goodIDs = {"1378185319594524675", "1378187944083722244"};
     List<Tweet> returnedTweets = twitterService.deleteTweets(goodIDs);
     assertNotNull(returnedTweets);
-    //assertEquals("Good Morning All",returnedTweets.getTweeterMessage());
   }
 }

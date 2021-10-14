@@ -11,7 +11,7 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
-/**public class TwitterControllerIntTest {
+public class TwitterControllerIntTest {
   TwitterController twitterController;
   @Before
   public void setUp() throws Exception{
@@ -62,4 +62,4 @@ import org.junit.Test;
     System.out.println("delete"+JsonParser.toJson(returnedTweets,true,true));
     assertNotNull(returnedTweets);
   }
-}**/
+}

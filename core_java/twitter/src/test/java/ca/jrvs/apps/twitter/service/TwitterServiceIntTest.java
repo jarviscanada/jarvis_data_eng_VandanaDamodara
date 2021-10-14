@@ -11,7 +11,7 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-/**
+
 public class TwitterServiceIntTest {
   TwitterService twitterService;
   @Before
@@ -65,4 +65,3 @@ String[] ids = {"1445945792137728000","1445947429514358793"};
     assertEquals(id,returnedTweet.getIdString());
   }
 }
-**/
