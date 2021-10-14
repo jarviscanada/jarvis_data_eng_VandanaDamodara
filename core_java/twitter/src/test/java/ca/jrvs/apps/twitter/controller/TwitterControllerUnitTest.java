@@ -38,22 +38,7 @@ public class TwitterControllerUnitTest {
   @InjectMocks
   TwitterController twitterController;
   private static Tweet tweet = new Tweet();
-  /*@BeforeClass
-  public static void setUpTweet() {
-    Coordinates coordinates = new Coordinates();
-    Double[] l1 = {1.0,-1.0};
 
-
-    coordinates.setcoordinates(l1);
-    tweet.setLocation(coordinates);
-    tweet.setIdString("123456789");
-    tweet.setIsretweeted(false);
-    tweet.setFavorited(true);
-    tweet.setFavoriteCount(4);
-    tweet.setEntity(new Entities());
-    tweet.setRetweetCount(0);
-    tweet.setId(12456789L);
-  }**/
 
 @Test
   public void postTweet() throws Exception{
