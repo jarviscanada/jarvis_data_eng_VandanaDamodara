@@ -35,7 +35,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TwitterDaoTest {
-/**
+
   private TwitterDao twitterDao;
 
   @Before
@@ -60,7 +60,7 @@ public class TwitterDaoTest {
     double lon = -79.640579;
     Tweet newTweet = TweetBuilder.buildTweet(tweeterMessage, lat, lon);
 
-    /* TODO: How to add tweeter mentions and hashtags from the message
+    /*TODO: How to add tweeter mentions and hashtags from the message
     String hashTagText = "hashtag01";
     int[] hashTagIndex = {1,2};
     HashTag hashTag = new HashTag();
@@ -69,6 +69,8 @@ public class TwitterDaoTest {
     HashTag[] hashTags = {hashTag};
     Entities entity = EntityBuilder.buildEntity(hashTags, null);
     newTweet.setEntity(entity);
+    */
+
 
 
     //test if the object is properly created
@@ -84,8 +86,7 @@ public class TwitterDaoTest {
 
 
 
-**/
- /** @Test
+  @Test
   public void findById() throws Exception {
 
     // ACTUAL TWEET:  This is a sample tweet Its a beautiful day!
@@ -101,7 +102,7 @@ public class TwitterDaoTest {
 }
 
   //Delete the tweet with id 1445774792141852681 message "Its a Working day"
- /** @Test
+  @Test
   public void deleteById() {
     Tweet returnedTweet = twitterDao.deleteById("1445774792141852681");
     //System.out.println(JsonParser.toJson(returnedTweet, true, true));
@@ -110,5 +111,5 @@ public class TwitterDaoTest {
   }
 
 
- **/
+
 }
