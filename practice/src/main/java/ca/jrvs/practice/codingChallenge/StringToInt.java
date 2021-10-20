@@ -29,7 +29,7 @@ public class StringToInt {
       }
     for(; l<s.length(); l++) {
         num = num * 10;
-        num += s.charAt(l) - '0';
+        num += s.charAt(l)-48;
 
       }
       if (isNeg) {

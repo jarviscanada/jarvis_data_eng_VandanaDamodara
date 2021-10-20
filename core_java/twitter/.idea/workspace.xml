@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="db84f97c-b96b-4f54-946f-10b64e7feb03" name="Changes" comment="twitter">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1yud2VZENw9lnDgP8JT0JjrzM8H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ca.jrvs.apps.twitter.service" />
+      <recent name="ca.jrvs.apps.twitter.dao" />
+      <recent name="ca.jrvs.apps.twitter.controller" />
+      <recent name="ca.jrvs.apps.twitter.dao.helper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TwitterCLISpringBoot">
+    <configuration name="TwitterCLIApp (1)" type="Application" factoryName="Application" nameIsGenerated="true">
+      <envs>
+        <env name="consumerKey" value="KlAr7xBS42WrVm9GGKpcfFAzu" />
+        <env name="consumerSecret" value="3gZNlPdBwRKshKWRMzvWlySZtc2wz3mCVWelNeP0a2dB4PnfOD" />
+        <env name="accessToken" value="40FihUpERpMRugXE6YZ9S6SDVQ4S0G" />
+        <env name="tokenSecret" value="Bsi7pc4edFeq07KJ5qR4bj6Sym5O9zRgz5EDG4mUCjGV5" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.twitter.TwitterCLIApp" />
+      <module name="twitter" />
+      <option name="PROGRAM_PARAMETERS" value="show &quot;1446120720119975945&quot;" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.jrvs.apps.twitter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwitterCLIApp" type="Application" factoryName="Application" nameIsGenerated="true">
+      <envs>
+        <env name="consumerKey" value="obyKy2bhJ1p80OXWVRPyTq12k" />
+        <env name="consumerSecret" value="LAd2lTb71oNrgjhh5oZLh86cwGsQnhfoS3Y6CeKr41qmMXBa9G" />
+        <env name="accessToken" value="1281982428005961729-atfR8gub973F12Lri5MmmdKpgiPd1K" />
+        <env name="tokenSecret" value="Er4o9w6rqlMZXUX35V5l9Qd3o9CF636oxRK5OUA8lnYfD" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.twitter.TwitterCLIApp" />
+      <module name="twitter" />
+      <option name="PROGRAM_PARAMETERS" value="delete &quot;1446522555519705118&quot;" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.jrvs.apps.twitter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwitterCLIBean" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="consumerKey" value="obyKy2bhJ1p80OXWVRPyTq12k" />
+        <env name="consumerSecret" value="LAd2lTb71oNrgjhh5oZLh86cwGsQnhfoS3Y6CeKr41qmMXBa9G" />
+        <env name="accessToken" value="1281982428005961729-atfR8gub973F12Lri5MmmdKpgiPd1K" />
+        <env name="tokenSecret" value="Er4o9w6rqlMZXUX35V5l9Qd3o9CF636oxRK5OUA8lnYfD" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.twitter.spring.TwitterCLIBean" />
+      <module name="twitter" />
+      <option name="PROGRAM_PARAMETERS" value="delete 1446545442494418952" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.jrvs.apps.twitter.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwitterCLIComponentScan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="consumerKey" value="obyKy2bhJ1p80OXWVRPyTq12k" />
+        <env name="consumerSecret" value="LAd2lTb71oNrgjhh5oZLh86cwGsQnhfoS3Y6CeKr41qmMXBa9G" />
+        <env name="accessToken" value="1281982428005961729-atfR8gub973F12Lri5MmmdKpgiPd1K" />
+        <env name="tokenSecret" value="Er4o9w6rqlMZXUX35V5l9Qd3o9CF636oxRK5OUA8lnYfD" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.twitter.spring.TwitterCLIComponentScan" />
+      <module name="twitter" />
+      <option name="PROGRAM_PARAMETERS" value="post &quot;Good afternoon&quot; &quot;32.00:-32.00&quot;" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.jrvs.apps.twitter.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwitterCLISpringBoot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="consumerKey" value="obyKy2bhJ1p80OXWVRPyTq12k" />
+        <env name="consumerSecret" value="LAd2lTb71oNrgjhh5oZLh86cwGsQnhfoS3Y6CeKr41qmMXBa9G" />
+        <env name="accessToken" value="1281982428005961729-atfR8gub973F12Lri5MmmdKpgiPd1K" />
+        <env name="tokenSecret" value="Er4o9w6rqlMZXUX35V5l9Qd3o9CF636oxRK5OUA8lnYfD" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.twitter.spring.TwitterCLISpringBoot" />
+      <module name="twitter" />
+      <option name="PROGRAM_PARAMETERS" value="post &quot;good evening&quot; &quot;32.00:-45.00&quot;" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.jrvs.apps.twitter.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwitterHttpHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="consumerSecret" value="3gZNlPdBwRKshKWRMzvWlySZtc2wz3mCVWelNeP0a2dB4PnfOD" />
+        <env name="accessToken" value="1281982428005961729-40FihUpERpMRugXE6YZ9S6SDVQ4S0G" />
+        <env name="tokenSecret" value="Bsi7pc4edFeq07KJ5qR4bj6Sym5O9zRgz5EDG4mUCjGV5" />
+        <env name="consumerKey" value="KlAr7xBS42WrVm9GGKpcfFAzu" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.twitter.dao.helper.TwitterHttpHelper" />
+      <module name="twitter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwitterControllerIntTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="twitter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.jrvs.apps.twitter.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.jrvs.apps.twitter.controller" />
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.twitter.controller.TwitterControllerIntTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="consumerKey" value="KlAr7xBS42WrVm9GGKpcfFAzu" />
+        <env name="consumerSecret" value="3gZNlPdBwRKshKWRMzvWlySZtc2wz3mCVWelNeP0a2dB4PnfOD" />
+        <env name="accessToken" value="1281982428005961729-40FihUpERpMRugXE6YZ9S6SDVQ4S0G" />
+        <env name="tokenSecret" value="Bsi7pc4edFeq07KJ5qR4bj6Sym5O9zRgz5EDG4mUCjGV5" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwitterDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="twitter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.jrvs.apps.twitter.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.jrvs.apps.twitter.dao" />
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.twitter.dao.TwitterDaoTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="consumerKey" value="KlAr7xBS42WrVm9GGKpcfFAzu" />
+        <env name="consumerSecret" value="3gZNlPdBwRKshKWRMzvWlySZtc2wz3mCVWelNeP0a2dB4PnfOD" />
+        <env name="accessToken" value="1281982428005961729-40FihUpERpMRugXE6YZ9S6SDVQ4S0G" />
+        <env name="tokenSecret" value="Bsi7pc4edFeq07KJ5qR4bj6Sym5O9zRgz5EDG4mUCjGV5" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.TwitterCLIApp" />
+      <item itemvalue="Application.TwitterCLIApp (1)" />
+      <item itemvalue="Application.TwitterCLIBean" />
+      <item itemvalue="Application.TwitterCLIComponentScan" />
+      <item itemvalue="Application.TwitterCLISpringBoot" />
+      <item itemvalue="JUnit.TwitterControllerIntTest" />
+      <item itemvalue="JUnit.TwitterDaoTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TwitterCLISpringBoot" />
+        <item itemvalue="Application.TwitterCLIComponentScan" />
+        <item itemvalue="Application.TwitterCLIBean" />
+        <item itemvalue="JUnit.TwitterDaoTest" />
+        <item itemvalue="JUnit.TwitterControllerIntTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db84f97c-b96b-4f54-946f-10b64e7feb03" name="Changes" comment="" />
+      <created>1633105199696</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633105199696</updated>
+    </task>
+    <task id="LOCAL-00001" summary="twitter">
+      <created>1633536539083</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1633536539083</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="twitter" />
+    <option name="LAST_COMMIT_MESSAGE" value="twitter" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint suspend="NONE" type="java-exception">
+          <properties class="oauth.signpost.exception.OAuthExpectationFailedException" package="oauth.signpost.exception">
+            <option name="NOTIFY_UNCAUGHT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/service/TwitterServiceUnitTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.mockito.internal.creation.bytebuddy.MockMethodInterceptor" memberName="mockCreationSettings" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/twitter$TwitterServiceIntTest.ic" NAME="TwitterServiceIntTest Coverage Results" MODIFIED="1633558084731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ca.jrvs.apps.twitter.service.*</FILTER>
+    </SUITE>
+  </component>
+</project>
