@@ -5,7 +5,7 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_VandanaDam
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: I am a qualified and experienced software engineer with three years of experience in the industry. I had completed my Bachelor of Technology degree in Electronics and Telecommunications. As a software developer, I believe that working with/understanding lower levels of abstraction behind a program is a prerequisite to writing highly optimized code. I enjoy creative problem solving and getting exposure to multiple projects. I love working in a collaborative work environment. I am a Highly proficient, diligent, and excellent problem solver. As a Junior Data Engineer at Jarvis, I participated in various challenging projects using an Agile/Scrum framework that allowed me to become proficient in technologies like Java, Git, SQL, Bash, Maven, and Docker. My experiences have taught me how to think outside the box when working, and I always strive to find the most optimized solution to the problem. I strive to stay current with relevant techniques and technologies.
+summary: I am detail-oriented, and an inquisitive problem solver who loves to build simple solutions for complex real-world problems. I have more than  three years of experience in the  industry as an IT professional, this experience helped me to build an analytical, detail-oriented mindset and also exposed me to the work culture and methodologies followed in large-scale industry.I believe that working with/understanding lower levels of abstraction behind a program is a prerequisite to writing highly optimized code. I enjoy creative problem solving and getting exposure to multiple projects. I love working in a collaborative work environment. I am a Highly proficient, diligent, and possess excellent Analytical thinking capability.  As a Junior Data Engineer at Jarvis, I participated in various challenging projects using an Agile/Scrum framework that allowed me to become proficient in technologies like Java, Git, SQL, Bash, Maven, and Docker. My experiences have taught me how to think outside the box when working, and I always strive to find the most optimized solution to the problem.  Learning new technologies and applying them excites me as a software because it solidifies my skillset and helps me grow along with the industry without falling behind.
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
 skills:
@@ -79,7 +79,7 @@ education:
     department: "Electronics and Telecommunication"
     # optional
     awards_achievements: 
-      - "Scholarship"  
+
 
 #Optional section
 others:
