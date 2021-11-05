@@ -24,6 +24,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_VandanaDam
   - Twitter App: Developed a Java command line CRUD application capable of posting, viewing, and deleting tweets from a user's Twitter account. Utilized Twitter REST API and leveraged HTTP for client-server communication. The application follows the MVC architecture and comprises multiple layers to facilitate development and testing. Spring Boot was used for dependency management, Docker for deployment, and Maven for building and packaging the application.
   - The projects were designed, implemented, tested, and deployed with; *Git, Docker, Bash Scripts, CentOS 7, PostgreSQL, Java 8 [Lambda/Steam Functions], Apache Maven, Mockito, DAO Design Pattern, Spring, JDBC API, Twitter Rest API, and Google Cloud Platform*
 
+**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_VandanaDamodara/tree/master/hadoop)]: Set up a Hadoop cluster on the Google Cloud Platform to handle and analyze big data, and optimally execute queries. Used Apache Hive to execute HSQL queries, and Apache Zeppelin to store all the results in a notebook. Data was stored in an HDFS volume, and queries were further optimized by using partitioned tables and columnar.
+
 
 ## Highlighted Projects
 **DataBase Design for Retail**: Designed a Relational Database and created Entity Relationship Diagram for Retail Customer containing various Entities. Implemented by creating many tables having primary keys and foreign keys to recognize the relationship, which helped ease the CRUD operations on the Database. Performed various SQL Queries on the Database.This project was developed using IBM Db2
