@@ -3,8 +3,13 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+<<<<<<< HEAD
 <!--Parent project-->
 
+=======
+
+  <!--Parent project-->
+>>>>>>> 1e21db95f52b471260f40743601ec79093add1d2
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
@@ -13,8 +18,11 @@
   </parent>
 
   <!--Project name-->
+<<<<<<< HEAD
 
   <!--Make sure you use JDK1.8-->
+=======
+>>>>>>> 1e21db95f52b471260f40743601ec79093add1d2
   <groupId>ca.jrvs.apps</groupId>
   <artifactId>twitter</artifactId>
   <version>1.0-SNAPSHOT</version>
@@ -24,16 +32,27 @@
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
+<<<<<<< HEAD
   <!--dependencies-->
   <!--oauth 1.0 and httpclient4-->
   <dependencies>
+=======
+  <!--Make sure you use JDK1.8-->
+  <!--dependencies-->
+  <dependencies>
+    <!--oauth 1.0 and httpclient4-->
+>>>>>>> 1e21db95f52b471260f40743601ec79093add1d2
     <dependency>
       <groupId>oauth.signpost</groupId>
       <artifactId>signpost-commonshttp4</artifactId>
       <version>1.2.1.2</version>
     </dependency>
     <!--Jackson JSON-->
+<<<<<<< HEAD
     <!--dependecy version is interited from the parent-->
+=======
+    <!--dependency version is inherited from the parent-->
+>>>>>>> 1e21db95f52b471260f40743601ec79093add1d2
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
@@ -54,7 +73,10 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1e21db95f52b471260f40743601ec79093add1d2
     </dependency>
 
     <dependency>
@@ -63,6 +85,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+<<<<<<< HEAD
   <build>
   <plugins>
   <plugin>
@@ -99,4 +122,16 @@
 
 
 
+=======
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>2.4.0</version>
+      </plugin>
+    </plugins>
+  </build>
+>>>>>>> 1e21db95f52b471260f40743601ec79093add1d2
 </project>

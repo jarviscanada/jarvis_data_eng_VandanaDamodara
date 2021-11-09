@@ -38,10 +38,7 @@
                 </transformer>
               </transformers>
             </configuration>
-            <goals>
-              <goal>shade</goal>
-            </goals>
-            <phase>package</phase>
+
           </execution>
         </executions>
         <groupId>org.apache.maven.plugins</groupId>
