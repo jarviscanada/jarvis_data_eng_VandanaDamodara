@@ -4,7 +4,7 @@ package ca.jrvs.apps.trading;
 
 import ca.jrvs.apps.trading.service.QuoteService;
 import java.util.Arrays;
-import java.util.logging.Logger;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,9 +22,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 public class Application implements CommandLineRunner {
 
- // private Logger logger = LoggerFactory.getLogger(Application.class);
+ private Logger logger = LoggerFactory.getLogger(Application.class);
 
-  //@Value("${app.init.dailyList}")
+  @Value("${app.init.dailyList}")
   private String[] initDailyList;
 
   @Autowired
@@ -41,22 +41,4 @@ public class Application implements CommandLineRunner {
 
   }
 }
-/**@SpringBootApplication(exclude = {JdbcTemplateAutoConfiguration.class, DataSourceAutoConfiguration.class,
-    HibernateJpaAutoConfiguration})
 
-public class Application implements CommandLineRunner{
-  @Value("${app.init.dailylist}")
-  private String[] initDailyList;
-  @Autowired
-  private QuoteService quoteService;
-
-  public static void main(String[] args) throws Exception{
-    SpringBootApplication app = new SpringBootApplication(Application.class);
-    app.run(args);
-  }
-  @Override
-  public void run(String... args) throws Exception{
-    //Arrays.stream(args).forEach(controller::getQuote);
-  }
-}
-**/
