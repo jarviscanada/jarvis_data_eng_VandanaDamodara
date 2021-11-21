@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages ={"ca.jrvs.apps.trading.dao","ca.jrvs.apps.trading.service"})
 public class TestConfig {
 
-  @Bean
+  //@Bean
   public MarketDataConfig marketDataConfig() {
     MarketDataConfig marketDataConfig = new MarketDataConfig();
     marketDataConfig.setHost("https://cloud.iexapis.com/v1");
@@ -24,7 +24,7 @@ public class TestConfig {
     return marketDataConfig;
   }
 
-  @Bean
+  //@Bean
   public HttpClientConnectionManager httpClientConnectionManagerConfig() {
     PoolingHttpClientConnectionManager cm = new PoolingHttpClientConnectionManager();
     cm.setMaxTotal(50);
@@ -32,7 +32,7 @@ public class TestConfig {
     return cm;
   }
 
-  @Bean
+  //@Bean
   public DataSource dataSource() {
     String jdbcUrl = "jdbc:postgresql://" +
         System.getenv("PSQL_HOST") + ":" +
