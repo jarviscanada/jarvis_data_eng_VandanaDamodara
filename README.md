@@ -26,6 +26,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_VandanaDam
 
 **Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_VandanaDamodara/tree/master/hadoop)]: Set up a Hadoop cluster on the Google Cloud Platform to handle and analyze big data, and optimally execute queries. Used Apache Hive to execute HSQL queries, and Apache Zeppelin to store all the results in a notebook. Data was stored in an HDFS volume, and queries were further optimized by using partitioned tables and columnar.
 
+**Springboot** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_VandanaDamodara/tree/master/Springboot)]: Made a trading application that allows users to manage accounts, quotes, and fetch stock information from IEX Cloud. All the components were implemented using Java, and Spring Boot was used to manage the dependencies, and have Apache Tomcat be used as a WebServlet. IEX Cloud APIs were used to retrieve the latest stock information, and PostgreSQL was used to create database schemas. Maven was used to manage the Java dependencies, and testing was done using JUnit 4. The project was then deployed on DockerHub as two docker images, where one image is the Postgres database that would set up all the relations, and the other image is the trading app itself.
+
 
 ## Highlighted Projects
 **DataBase Design for Retail**: Designed a Relational Database and created Entity Relationship Diagram for Retail Customer containing various Entities. Implemented by creating many tables having primary keys and foreign keys to recognize the relationship, which helped ease the CRUD operations on the Database. Performed various SQL Queries on the Database.This project was developed using IBM Db2
