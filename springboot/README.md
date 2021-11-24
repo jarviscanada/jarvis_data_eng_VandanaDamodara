@@ -24,24 +24,24 @@ Table of contents
 ``` docker network create trading-net ```
 
 - Start containers
-``` docker run --name trading-psql-dev \
--e POSTGRES_PASSWORD=password \
--e POSTGRES_DB=jrvstrading \
--e POSTGRES_USER=postgres \
---network trading-net \
--d -p 5432:5432 kimbrian94/trading-psql ```
+``` docker run --name trading-psql-dev \```
+``` -e POSTGRES_PASSWORD=password \ ```
+``` -e POSTGRES_DB=jrvstrading \ ```
+``` -e POSTGRES_USER=postgres \ ```
+``` --network trading-net \ ```
+``` -d -p 5432:5432 kimbrian94/trading-psql ```
 
 ``` IEX_PUB_TOKEN="your_token" ```
 
-``` docker run --name trading-app-dev \
--e "PSQL_HOST=trading-psql-dev" \
--e "PSQL_PORT=5432" \
--e "PSQL_DB=jrvstrading" \
--e "PSQL_USER=postgres" \
--e "PSQL_PASSWORD=password" \
--e "IEX_PUB_TOKEN=${IEX_PUB_TOKEN}" \
---network trading-net \
--d -p 8080:8080 -t kimbrian94/trading-app ```
+``` docker run --name trading-app-dev \ ```
+``` -e "PSQL_HOST=trading-psql-dev" \ ```
+``` -e "PSQL_PORT=5432" \ ```
+``` -e "PSQL_DB=jrvstrading" \ ```
+``` -e "PSQL_USER=postgres" \ ```
+``` -e "PSQL_PASSWORD=password" \ ```
+``` -e "IEX_PUB_TOKEN=${IEX_PUB_TOKEN}" \ ```
+``` --network trading-net \ ```
+``` -d -p 8080:8080 -t kimbrian94/trading-app ```
 
 -  Trading-app with SwaggerUI
 http://localhost:8080/swagger-ui.html
