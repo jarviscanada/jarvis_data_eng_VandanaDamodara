@@ -11,14 +11,14 @@ Table of contents
 - This is a SpringBoot Trading Application for Jarvis which provides a new trading platform that replaces the legacy trading app. Because the previous app had monolithic architecture, which was hard to maintain and scale, this new system will provide microservice architecture and SpringBoot framework for efficiency.
 - This application is a RESTful API and can be consumed by various clients such as web/mobile applications. HTTP endpoints are used to help manage trader profiles, accounts, and trade securities.
 
-## Technologies Used: Java, SpringBoot, REST API, Apache Tomcat, PostgreSQL, MVP, Docker, Maven, Swagger-Ui, Postman
+- Technologies Used: Java, SpringBoot, REST API, Apache Tomcat, PostgreSQL, MVP, Docker, Maven, Swagger-Ui, Postman
 
 # Quick Start
 
 - Prequiresites: Docker, CentOS 7
 - Pull images from docker hub
 ``` docker pull vandana1/trading-app
-docker pull vandana1/trading-psql ```
+    docker pull vandana1/trading-psql ```
 
 - Create a docker network
 ``` docker network create trading-net ```
