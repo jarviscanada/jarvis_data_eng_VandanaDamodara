@@ -17,8 +17,8 @@ Table of contents
 
 - Prequiresites: Docker, CentOS 7
 - Pull images from docker hub
-``` docker pull vandana1/trading-app
-    docker pull vandana1/trading-psql ```
+``` docker pull vandana1/trading-app ```
+```    docker pull vandana1/trading-psql ```
 
 - Create a docker network
 ``` docker network create trading-net ```
