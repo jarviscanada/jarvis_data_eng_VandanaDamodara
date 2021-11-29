@@ -94,6 +94,7 @@ The application was tested using JUnit 4 Integration tests for the Controller, S
 
 # Deployment
 
+![docker](./assets/docker.png)
 The Springboot Application and PostgreSQL Database was dockerized, so it's can be easily deployed to any server.
 
 step 1:
