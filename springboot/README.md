@@ -24,9 +24,10 @@ Table of contents
 ``` docker network create trading-net ```
 
 - Start containers
+
 ``` docker run --name trading-psql-dev \
    -e POSTGRES_PASSWORD=password \ ```
-``` -e POSTGRES_DB=jrvstrading \ ```
+ -e POSTGRES_DB=jrvstrading \ ```
 ``` -e POSTGRES_USER=postgres \ ```
 ``` --network trading-net \ ```
 ``` -d -p 5432:5432 kimbrian94/trading-psql ```
