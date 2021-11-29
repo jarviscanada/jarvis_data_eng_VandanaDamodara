@@ -45,13 +45,13 @@ Table of contents
 
 - Trading-app with SwaggerUI
 http://localhost:8080/swagger-ui.html
-  ![my image](./asset/swagger.png)
+  ![swagger](./asset/swagger.png)
 
 
 # Implementation
 
 ## Architecture
-![my image](./asset/trading.png)
+![trading](./asset/trading.png)
 
 - Controller layer: In the controller layer, user inputs are parsed and appropriate methods are called based on the REST API endpoint. The endpoints are annotated in the class and method-level for the Tomcat WebServlet to redirect and call to.
 - Service layer: In the service layer, the business logic is encapsulated. User input passed as arguments are validated and exceptions are handled if any error occurs.
